@@ -1,0 +1,46 @@
+.form {
+    max-width: 80em;
+    display: flex;
+    flex-direction: column;
+}
+
+.textareaWrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.textareaDescription {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+.rulerWrapper {
+    width: calc(100% + 8px * 2);
+    height: 36px;
+    margin: 8px -6px 0 -6px;
+}
+
+.input, .output {
+    width: 40em;
+    height: 400px;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.buttonWrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    
+    button {
+        width: 100px;
+        color: #fff;
+        padding: 8px 0;
+        border: none;
+        border-radius: 8px;
+        background: #906;
+    }
+}
