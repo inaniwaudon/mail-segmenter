@@ -22,5 +22,6 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "typescript": "latest"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }

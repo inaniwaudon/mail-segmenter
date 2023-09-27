@@ -9,7 +9,7 @@ const Page = () => {
         <a href="https://developers-jp.googleblog.com/2023/09/budoux-adobe.html">
           BudouX
         </a>{" "}
-        を活用して、文章を指定の文字数で読みやすく区切ります。。メールの作成等にどうぞ
+        を活用して、文章を指定の文字数で読みやすく区切ります。メールの作成等にどうぞ
       </p>
       <MainForm />
     </main>
