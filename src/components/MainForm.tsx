@@ -35,7 +35,7 @@ const MainForm = () => {
             <Ruler value={printWidth} max={maxWidth} setValue={setPrintWidth} />
           </div>
           <div className={styles.buttonWrapper}>
-            <button onClick={onClick}>整形</button>
+            <button onClick={onClick}>幅 {printWidth} 文字で整形</button>
           </div>
         </div>
         <div>

@@ -36,11 +36,18 @@
     justify-content: flex-end;
     
     button {
-        width: 100px;
+        width: 200px;
         color: #fff;
+        font-size: 16px;
+        font-family: sans-serif;
         padding: 8px 0;
         border: none;
         border-radius: 8px;
-        background: #906;
+        cursor: pointer;
+        background: #06f;
+        
+        &:hover {
+            background: #39f;
+        }
     }
 }
