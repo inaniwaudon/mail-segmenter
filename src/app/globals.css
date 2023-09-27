@@ -1,3 +1,7 @@
+:root {
+  --main-color: #06f;
+}
+
 html,
 body {
   margin: 0;

@@ -1,6 +1,15 @@
 .main {
   margin: 32px 40px;
   padding: 0;
+
+  a {
+    color: var(--main-color);
+    text-underline-offset: 4px;
+
+    &:hover {
+      color: #39f;
+    }
+  }
 }
 
 .title {

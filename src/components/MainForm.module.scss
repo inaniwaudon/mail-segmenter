@@ -44,7 +44,7 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        background: #06f;
+        background: var(--main-color);
         
         &:hover {
             background: #39f;
