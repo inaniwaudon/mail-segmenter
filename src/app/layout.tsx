@@ -2,8 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "メールをいい感じに改行するやつ",
-  description: "メールをいい感じに改行します",
+  title: "mail-segmenter",
+  description:
+    "BudouX を活用して、文章を指定の文字数で区切ります。メールの作成等にどうぞ",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
