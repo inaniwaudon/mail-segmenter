@@ -9,6 +9,11 @@
     gap: 24px;
 }
 
+.textareaHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
 .textareaDescription {
     font-size: 16px;
     margin: 0 0 12px 0;
