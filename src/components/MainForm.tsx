@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 import styles from "./MainForm.module.scss";
 import { formatSentence } from "@/lib/format";
 import Ruler from "./Ruler";
@@ -9,6 +9,13 @@ const MainForm = () => {
   const [inputSentence, setInputSentence] = useState("");
   const [outputSentence, setOutputSentence] = useState("");
   const [printWidth, setPrintWidth] = useState(32);
+
+  const count = useMemo(() => inputSentence.length, [inputSentence]);
+
+  const countWithoutBreaks = useMemo(
+    () => inputSentence.replace(/[\n\t 　]/g, "").length,
+    [inputSentence]
+  );
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -25,7 +32,12 @@ const MainForm = () => {
     <form className={styles.form} onSubmit={onSubmit}>
       <div className={styles.textareaWrapper}>
         <div>
-          <h3 className={styles.textareaDescription}>原文</h3>
+          <header className={styles.textareaHeader}>
+            <h3 className={styles.textareaDescription}>原文</h3>
+            <div>
+              {count} 文字（改行・スペースなし：{countWithoutBreaks} 文字）
+            </div>
+          </header>
           <textarea
             className={styles.input}
             value={inputSentence}
@@ -39,7 +51,9 @@ const MainForm = () => {
           </div>
         </div>
         <div>
-          <h3 className={styles.textareaDescription}>整形後テキスト</h3>
+          <header className={styles.textareaHeader}>
+            <h3 className={styles.textareaDescription}>整形後テキスト</h3>
+          </header>
           <textarea
             className={styles.output}
             value={outputSentence}
